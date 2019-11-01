@@ -1,10 +1,11 @@
+import materializeCSS from "materialize-css/dist/css/materialize.min.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { crateStore, applyMiddleware, createStore } from "redux";
 
 import App from "./components/App";
-import reducers from './reducers';
+import reducers from "./reducers";
 
 const store = createStore(reducers, {}, applyMiddleware());
 
